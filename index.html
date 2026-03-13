@@ -2,64 +2,102 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Sabonetes Artesanais</title>
+<title>Delícia de Banho - Sabonetes Artesanais</title>
 
 <style>
 
 body{
 font-family: Arial;
-background:#f4f4f4;
 margin:0;
+background:#f5f5f5;
 }
 
 header{
-background:#2e7d32;
+background:#8fa53c;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px;
 }
 
-.container{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-padding:30px;
+header h1{
+font-size:40px;
+margin:0;
 }
 
-.produto{
+header p{
+font-size:18px;
+}
+
+.sobre{
+max-width:900px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+.sobre h2{
+color:#8fa53c;
+}
+
+.produtos{
+padding:40px;
+}
+
+.titulo-secao{
+text-align:center;
+font-size:28px;
+color:#444;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
 background:white;
 border-radius:12px;
-width:320px;
-margin:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 padding:20px;
 text-align:center;
-box-shadow:0 0 12px rgba(0,0,0,0.1);
 }
 
-.produto img{
+.card img{
 width:100%;
 border-radius:10px;
 }
 
+.preco{
+font-size:20px;
+color:#8fa53c;
+font-weight:bold;
+}
+
 button{
-background:#4CAF50;
-color:white;
+background:#25D366;
 border:none;
 padding:12px;
 border-radius:6px;
-cursor:pointer;
+color:white;
 font-size:16px;
+cursor:pointer;
+margin-top:10px;
 }
 
 button:hover{
-background:#2e7d32;
+background:#1ebe5d;
 }
 
 footer{
 background:#333;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -68,47 +106,143 @@ padding:15px;
 <body>
 
 <header>
-<h1>Sabonetes Artesanais</h1>
-<p>Feitos à mão com ingredientes naturais</p>
+
+<h1>Delícia de Banho</h1>
+<p>Sabonetes Artesanais Naturais</p>
+
 </header>
 
-<div class="container">
+<section class="sobre">
 
-<div class="produto">
+<h2>Nossa marca Delícia de Banho!</h2>
 
-<img src="sabonete1.jpg.jpeg">
+<p>
+Descubra o prazer de se sentir bem com nossas fragrâncias deliciosas!  
+Nossos sabonetes são naturais, feitos em casa de forma artesanal,
+para garantir a pureza e a qualidade que você merece.
+</p>
 
-<h2>Sabonete Herbal Verde</h2>
-<p>Sabonete natural com ervas.</p>
-<h3>R$ 10,00</h3>
+<p>
+<strong>Vermelha:</strong> Com um doce cheiro de rosas vermelhas,
+essa fragrância é perfeita para quem busca um toque romântico e sensual.
+</p>
 
+<p>
+<strong>Verde:</strong> Com um envolvente aroma de erva doce,
+essa fragrância é ideal para  quem precisa de um momento de relaxamento e tranquilidade.
+</p>
+
+</section>
+
+<section class="produtos">
+
+<h2 class="titulo-secao">Sabonetes com Caixa</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="img3.jpeg">
+<h3>Sabonete verde</h3>
+<p class="preco">R$ 15,00</p>
 <a href="https://wa.me/5521983146998">
 <button>Comprar no WhatsApp</button>
 </a>
-
 </div>
 
-<div class="produto">
+<div class="card">
+<img src="img4.jpeg">
+<h3>Sabonete verde</h3>
+<p class="preco">R$ 15,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
 
+<div class="card">
 <img src="sabonete2.jpg.jpeg">
-
-<h2>Sabonete Floral Vermelho</h2>
-<p>Sabonete artesanal decorado.</p>
-<h3>R$ 15,00</h3>
-
+<h3>Sabonete Vermelho</h3>
+<p class="preco">R$ 15,00</p>
 <a href="https://wa.me/5521983146998">
 <button>Comprar no WhatsApp</button>
 </a>
-
 </div>
 
 </div>
+
+</section>
+
+<section class="produtos">
+
+<h2 class="titulo-secao">Sabonetes Avulsos (Sem Caixa)</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="sabonete1.jpg.jpeg">
+<h3>Sabonete Vermelho</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+<div class="card">
+<img src="img1.jpeg">
+<h3>Sabonete Verde</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+<div class="card">
+<img src="img8.jpeg">
+<h3>Sabonete Vermelho</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+<div class="card">
+<img src="img2.jpeg">
+<h3>Sabonete Verde</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+
+<div class="card">
+<img src="img5.jpeg">
+<h3>Sabonete Verde</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+<div class="card">
+<img src="img7.jpeg">
+<h3>Sabonete Vermelho</h3>
+<p class="preco">R$ 12,00</p>
+<a href="https://wa.me/5521983146998">
+<button>Comprar no WhatsApp</button>
+</a>
+</div>
+
+
+</div>
+
+</section>
+
 
 <footer>
-<p>© 2026 Sabonetes Artesanais</p>
+
+<p>© 2026 Delícia de Banho - Sabonetes Artesanais</p>
+
 </footer>
 
 </body>
-
 </html>
-
